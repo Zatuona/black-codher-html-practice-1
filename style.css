@@ -1,2 +1,23 @@
+/*Import font and apply it to the page*/
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 *{font-family: 'urbanist';}
+
+@media only screen 
+/* This applies to mobile devices whether portrait or landscape */
+and (min-device-width : 320px) 
+and (max-device-width :480px) 
+{ h1 h2 {font-size: 20px;}
+       p {font-size: 14px ;}
+      body {background-color:#3D3B8E ;}
+      *{color:#FFF;}
+}
+
+
+@media only screen 
+/* This SHOULD apply to tablets, laptops and desktop */
+and (min-device-width:768px)
+{ h1 h2{font-size: 50px;}
+p {font-size: 26px;}
+body {background-color: #B0E298;}
+*{color: #000;}
+}
